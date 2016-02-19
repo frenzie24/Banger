@@ -17,8 +17,8 @@
     <string name="web_page_url">http://www.tk-squared.com/Banger</string>
     <string name="deep_url">android-app://com.tk_squared.banger/http/www.tk-squared.com/Banger</string>
     <string name="app_id_string">com.tk_squared.banger</string>
-    <string name="app_icon_url">http://www.tk-squared.com/Popcorn/popcorn_icon.png</string>
-    <string name="stations_list_url">http://tk-squared.com/Bong/stations.json</string>
-    <string name="server_list_version">bong_server_version.txt</string>
+    <string name="app_icon_url">http://www.tk-squared.com/Banger/banger_icon.png</string>
+    <string name="stations_list_url">http://tk-squared.com/Banger/stations.json</string>
+    <string name="server_list_version">banger_server_version.txt</string>
     <string name="facebook_app_id">1034248723299442</string>
 </resources>
