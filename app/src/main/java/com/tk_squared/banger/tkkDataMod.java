@@ -3,7 +3,6 @@ package com.tk_squared.banger;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.util.Log;
@@ -66,13 +65,13 @@ public class tkkDataMod {
             System.out.println(stations.size());
 
             try {
-                URL url = new URL("http://tk-squared.com/Popcorn/stations.json");
+                URL url = new URL(_activity.getString(R.string.stations_list_url));
                 URLConnection con = url.openConnection();
                 InputStream in = con.getInputStream();
                 this.body = IOUtils.convertStreamToString(in);
                 String[] lines = this.body.split("~#%#~");
                 String serverListVersion = lines[0];
-                File vFile = new File(_activity.getApplicationContext().getFilesDir(),"popcorn_server_version.txt");
+                File vFile = new File(_activity.getApplicationContext().getFilesDir(),_activity.getString(R.string.server_list_version));
 
                 BufferedReader reader;
                 if(!update) {
@@ -188,11 +187,12 @@ public class tkkDataMod {
             }
             catch(MalformedURLException e){
                 Log.i("MalformedURLException", e.toString());
+                this.bitmap = BitmapFactory.decodeResource(_activity.getApplicationContext().getResources(), R.drawable.ic_launcher);
                 //do nothing
             }
             catch (IOException e){
                 Log.i("IOException", "IOException: " + e.toString());
-                Log.i("Popcorn Icon", "Using Popcorn icon for station: " + this.name);
+                Log.i(_activity.getString(R.string.app_name), "Using "+_activity.getString(R.string.app_name)+" icon for station: " + this.name);
                 bitmap = BitmapFactory.decodeResource(_activity.getApplicationContext().getResources(), R.drawable.ic_launcher);
             }
             return 0;
@@ -204,6 +204,8 @@ public class tkkDataMod {
 
         protected void onPostExecute(Integer result){
             if(this.bitmap == null) {
+
+                Log.i(_activity.getString(R.string.app_name), "Icon is null. Using "+_activity.getString(R.string.app_name)+" icon for station: " + this.name);
                 this.bitmap = BitmapFactory.decodeResource(_activity.getApplicationContext().getResources(), R.drawable.ic_launcher);
             }
             instance.stations.add(dataSource.createStation(this.name, this.uri, this.bitmap, _activity));
