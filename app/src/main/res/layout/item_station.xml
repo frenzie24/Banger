@@ -11,6 +11,7 @@
         android:orientation="vertical"
         android:layout_gravity="start"
         android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:paddingLeft="5dp">
         <ImageView
             android:id="@+id/station_icon"
@@ -34,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="@color/colorTextDark"
+            android:textColor="@color/colorTextLight"
             android:textSize="@dimen/list_name_size"
             android:text="@string/station_title" />
         <TextView
@@ -42,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="@color/colorTextDark"
+            android:textColor="@color/colorTextLight"
             android:textSize="@dimen/list_URL_size"
             android:text="@string/station_subtitle"/>
 

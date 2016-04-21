@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Banger.iml" filepath="$PROJECT_DIR$/Banger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-support-multidex/android-support-multidex.iml" filepath="$PROJECT_DIR$/android-support-multidex/android-support-multidex.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/mm-ad-sdk/mm-ad-sdk.iml" filepath="$PROJECT_DIR$/mm-ad-sdk/mm-ad-sdk.iml" />
     </modules>

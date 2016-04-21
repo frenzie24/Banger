@@ -2,11 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.tk_squared.banger.BangerActivity">
+    tools:context="com.tk_squared.banger.TkkActivity">
 
-    <item
-        android:id="@+id/action_facebook_share"
-        android:icon="@drawable/ic_action_share_white"
-        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_item_share"
+        android:title="@string/share_title"
+        app:showAsAction="ifRoom"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"/>
 
 </menu>
