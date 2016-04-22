@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Banger</string>
-    <integer name="version_code">1</integer>
     <string name="version_name">Version:  </string>
     <string name="compile_date">Compiled on: </string>
     <string name="company">TK-Squared, LLC</string>
@@ -11,19 +10,15 @@
     <string name="share_message">Listening to awesome </string>
     <string name="get_message">Get Banger! Free Rock for your Android!</string>
     <string name="download_url">https://play.google.com/store/apps/details?id=com.tk_squared.banger</string>
-    <string name="url_error">Oh No! That Station Didn\'t Load!</string>
-    <string name="ad_description">Ad support - We like to eat too!</string>
     <string name="icon_description">Station Icon</string>
     <string name="splash_description">TK-Squared Logo</string>
-    <string name="mmedia_apid">220358</string>
-    <string name="mmedia_inter_apid">223815</string>
     <string name="menu_fetch_title">Check For new List</string>
     <string name="menu_edit_title">Edit List</string>
     <string name="menu_about_title">About Banger</string>
     <string name="web_page_url">http://www.tk-squared.com/Banger</string>
     <string name="app_id_string">com.tk_squared.banger</string>
     <string name="app_icon_url">http://www.tk-squared.com/Banger/banger_icon.png</string>
-    <string name="stations_list_url">http://tk-squared.com/Banger/stations.json</string>
+    <string name="stations_list_url">http://tk-squared.com/Banger/stations_.json</string>
     <integer name="smaato_pub_id">1100018452</integer>
     <integer name="smaato_ad_id">130118801</integer>
     <integer name="smaato_inter_id">130118802</integer>

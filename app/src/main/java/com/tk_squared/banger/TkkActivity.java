@@ -278,9 +278,6 @@ public class TkkActivity extends AppCompatActivity
     //endregion
 
     //region Description: Interface methods
-
-
-
     //Callback method for TuxedoActivityFragment.Callbacks
     @Override
     public void onStationSelected(tkkStation station) {
@@ -353,5 +350,5 @@ public class TkkActivity extends AppCompatActivity
                     Context.BIND_AUTO_CREATE);
         }
     }
-
+    //endregion
 }
