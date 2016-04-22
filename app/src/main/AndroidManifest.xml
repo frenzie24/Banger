@@ -52,6 +52,7 @@
                     android:host="Banger" />
             </intent-filter>
         </activity>
+        <activity android:name="com.smaato.soma.interstitial.InterstitialActivity" />
         <service android:name="NotificationKillerService" />
     </application>
 </manifest>

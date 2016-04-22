@@ -24,7 +24,7 @@
         android:paddingBottom="100dp"
         android:layout_centerInParent="true"/>
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/ad_container"
         android:orientation="vertical"
         android:layout_alignParentBottom="true"
@@ -33,6 +33,6 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/colorThemeBackground">
-    </LinearLayout>
+    </RelativeLayout>
 
 </RelativeLayout>

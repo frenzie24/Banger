@@ -8,17 +8,17 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/SOMAAndroidSDK5.0.3" />
             <option value="$PROJECT_DIR$/android-support-multidex" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/mm-ad-sdk" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/SOMAAndroidSDK5.0.3" />
             <option value="$PROJECT_DIR$/android-support-multidex" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/mm-ad-sdk" />
           </set>
         </option>
       </GradleProjectSettings>

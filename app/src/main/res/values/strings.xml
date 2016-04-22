@@ -24,7 +24,10 @@
     <string name="app_id_string">com.tk_squared.banger</string>
     <string name="app_icon_url">http://www.tk-squared.com/Banger/banger_icon.png</string>
     <string name="stations_list_url">http://tk-squared.com/Banger/stations.json</string>
+    <integer name="smaato_pub_id">1100018452</integer>
+    <integer name="smaato_ad_id">130118801</integer>
+    <integer name="smaato_inter_id">130118802</integer>
+    <integer name="smaato_reload_delay">20</integer>
     <integer name="about_screen_delay">8000</integer>
-    <integer name="interstitial_reload_delay">60000</integer>
-    <integer name="inline_ad_refresh_rate">30000</integer>
+    <integer name="smaato_interstitial_reload_delay">60000</integer>
 </resources>
