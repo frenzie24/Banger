@@ -1,7 +1,10 @@
 package com.tk_squared.banger;
 
+import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
+
+import com.smaato.soma.AdDimension;
 import com.smaato.soma.BannerView;
 import com.smaato.soma.interstitial.Interstitial;
 import com.smaato.soma.interstitial.InterstitialAdListener;
@@ -16,6 +19,7 @@ import com.smaato.soma.interstitial.InterstitialAdListener;
  */
 
 class AdSupport implements InterstitialAdListener {
+
 
     private Interstitial interstitial;
     private final TkkActivity activity;
@@ -50,16 +54,17 @@ class AdSupport implements InterstitialAdListener {
             @Override
             public void run(){
                 interstitial.asyncLoadNewBanner();
+                Log.i("SOME AdSupport", "Loading new interstitual");
             }
         };
         activity.getHandler().postDelayed(r,
-                activity.getResources().getInteger(R.integer.smaato_interstitial_reload_delay));
+                /*activity.getResources().getInteger(R.integer.smaato_interstitial_reload_delay)*/ 20);
     }
 
     //region Description:Callback methods for InterstitialListener
     @Override
     public void onReadyToShow(){
-        //We'll let ya know
+        Log.i("SOMA AdSupport", "Interstitual ready to show");
     }
 
     @Override
@@ -69,7 +74,7 @@ class AdSupport implements InterstitialAdListener {
 
     @Override
     public void onFailedToLoadAd(){
-        //sh*t happens
+        Log.i("SOMA AdSupport", "Interstitual failed to load");
         interBannerLoad();
     }
 
@@ -86,18 +91,16 @@ class AdSupport implements InterstitialAdListener {
 
 
     private void setupSmaato(){
-        BannerView bv = new BannerView(activity);
+
+        BannerView bv = activity.findViewById(R.id.ad_container);
         bv.setAutoReloadEnabled(true);
         bv.setAutoReloadFrequency(activity.getResources().getInteger(R.integer.smaato_reload_delay));
-
-        RelativeLayout relativeLayout = (RelativeLayout)activity.findViewById(R.id.ad_container);
-        if (relativeLayout != null){
-            relativeLayout.addView(bv, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
-                    ViewGroup.LayoutParams.WRAP_CONTENT));
-        }
-
         bv.getAdSettings().setPublisherId(activity.getResources().getInteger(R.integer.smaato_pub_id));
         bv.getAdSettings().setAdspaceId(activity.getResources().getInteger(R.integer.smaato_ad_id));
+        bv.getAdSettings().setAdDimension(AdDimension.DEFAULT);
+        bv.setAutoReloadEnabled(true);
+        bv.setAutoReloadFrequency(10);
+        bv.setLocationUpdateEnabled(true);
         bv.asyncLoadNewBanner();
     }
 

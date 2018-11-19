@@ -3,6 +3,7 @@
     <string name="app_name">Banger</string>
     <string name="version_name">Version:  </string>
     <string name="compile_date">Compiled on: </string>
+    <string name="privacy_policy">Our privacy policy: http://tk-squared.com/Banger/privacy.html</string>
     <string name="company">TK-Squared, LLC</string>
     <string name="subtitle">Rock, Metal, and Alternative Stations</string>
     <string name="station_title">Station Title</string>
